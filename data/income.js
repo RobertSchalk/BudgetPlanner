@@ -9,10 +9,17 @@ var Income = function (type, company, pay) {
     this.company = company;
     this.pay = pay;
 }
-
-Income.prototype.Print = function () {
+//index is injected from the calling function. This is to set an index attribute on
+//certain elements to allow for the deletion of items on the JSON file.
+Income.prototype.Print = function (index) {
+    
     var tr_tag = document.createElement('tr');
+    
     tr_tag.className = 'incomeRow';
+    var deleteCell = document.createElement('td');
+    deleteCell.className = 'deleteIncomeValue';
+    deleteCell.textContent = 'Delete';
+    deleteCell.setAttribute('index', index)
     var cell1 = document.createElement('td');
     cell1.className = 'typeCell';
     cell1.textContent = this.type;
@@ -22,6 +29,7 @@ Income.prototype.Print = function () {
     var cell3 = document.createElement('td');
     cell3.className = 'payCell';
     cell3.textContent = this.pay.toLocaleString();
+    tr_tag.appendChild(deleteCell);
     tr_tag.appendChild(cell1);
     tr_tag.appendChild(cell2);
     tr_tag.appendChild(cell3);

@@ -11,9 +11,13 @@ var Bill = function (type, company, pay, details) {
     this.details = details;
 }
 
-Bill.prototype.Print = function () {
+Bill.prototype.Print = function (index) {
     var tr_tag = document.createElement('tr');
     tr_tag.className = 'billRow';
+    var deleteCell = document.createElement('td');
+    deleteCell.className = 'deleteBillsValue';
+    deleteCell.textContent = 'Delete'
+    deleteCell.setAttribute('index', index)
     var cell1 = document.createElement('td');
     cell1.className = 'typeCell';
     cell1.textContent = this.type;
@@ -25,6 +29,7 @@ Bill.prototype.Print = function () {
     cell3.textContent = this.pay.toLocaleString();
     var cell4 = document.createElement('td');
     cell4.className = 'detailsCell';
+    tr_tag.appendChild(deleteCell);
     tr_tag.appendChild(cell1);
     tr_tag.appendChild(cell2);
     tr_tag.appendChild(cell3);

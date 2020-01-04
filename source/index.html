@@ -107,16 +107,23 @@
 
 
             <div id="incomeBoard" class="view">
-                <form id="CreateIncome">
+                <form id="CreateIncome" class="inputGroup">
+                    <div class="formSpacer">
                     <label>Type of Income</label>
                     <input id="incomeType" class="incomeInput input" type="text" title="Enter type of income here.">
+                    </div>
+                    <div class="formSpacer">
                     <label>Source of Income</label>
                     <input id="incomeCompany" class="incomeInput input" type="text" title="Enter where income is coming from.">
+                    </div>
+                    <div class="formSpacer">
                     <label>Monthly income</label>
                     <input id="incomePay" class="incomeInput input" type="number" title="Enter monthly income here.">
-                    </form>
+                     </div>
+                </form>
                 <table>
                     <thead>
+                        <th class="deleteHead"></th>
                         <th>Type</th>
                         <th>Company</th>
                         <th>Monthly Income</th>
@@ -130,18 +137,27 @@
 
 
             <div id="billsBoard" class="view">
-                <form id="CreateBill">
+                <form id="CreateBill" class="inputGroup">
+                    <div class="formSpacer">
                     <label>Type of Bill</label>
                     <input id="billType" class="billInput input" type="text" title="Enter type of income here.">
+                    </div>
+                    <div class="formSpacer">
                     <label>Company of Bill</label>
                     <input id="billCompany" class="billInput input" type="text" title="Enter where income is coming from.">
+                    </div>
+                    <div class="formSpacer">
                     <label>Total Monthly payment</label>
                     <input id="billPay" class="billInput input" type="number" title="Enter monthly income here.">
+                    </div>
+                    <div class="formSpacer">
                     <label>Details</label>
                     <input id="billDetails" class="billInput input" type="text" title="Enter monthly income here.">
-                    </form>
+                    </div>
+                </form>
                 <table>
                     <thead>
+                        <th class="deleteHead"></th>
                         <th>Type</th>
                         <th>Company</th>
                         <th>Monthly bill expense</th>
@@ -153,10 +169,18 @@
                 </table>
             </div>
 
+            <div id="deleteConfirmation">
+                <p>Successfully deleted!</p>
+                <div id="deleteOKButton">Ok</div>
+            </div>
+
             
 
         <script>
             require('../scripts/index.js');
+
+            
+
         </script>
     </body>
 </html>
