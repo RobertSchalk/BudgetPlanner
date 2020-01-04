@@ -1,0 +1,200 @@
+*{
+    transition: 0.3s ease-in-out;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+    transition: none;
+}
+.view{
+    display: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    vertical-align: middle;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.4);
+    margin: 0 0 30px;
+    user-select: none;
+    border-bottom: 5px double #00ce;
+}
+nav ul{
+    width: max-content;
+    height: inherit;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.navItem {
+    width: calc(max-content - 14px);
+    height: inherit;
+    padding: 0 8px;
+    margin: 0 auto;
+    list-style-type: none;
+    border-right: 1px dashed rgba(0,0,0,0.6);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    display: table-cell;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+.navItem:last-of-type{
+    border: none;
+}
+.navItem:hover{
+background-color: rgba(0,0,0,0.2);
+cursor: pointer;
+}
+
+#dashboard{
+    width: 90%;
+    min-height: 80%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.3);
+    border: 5px double rgba(250, 250, 250, 0.5);
+    border-radius: 30px;
+    text-align: center;
+    color: #bb3535;
+    text-shadow: 2px 2px 3px #000;
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+}
+.dashboardTitle{
+    height: 50px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 100%;
+    border-bottom: 5px double rgba(250, 250, 250, 0.6);
+    vertical-align: middle;
+    line-height: 50px;
+}
+.clipboard{
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    padding: 0;
+    border: 7px double #222;
+    border-radius: 15px;
+    display: inline-table;
+    background-color: #555;
+    text-shadow: 1px 1px 2px #000;
+    box-shadow: 2px 2px 3px #000, inset 2px 2px 3px #000, inset -1px -1px 2px #999, 1px -1px 2px #444, -1px 1px 2px #666;
+    vertical-align: middle;
+    color: #fff;
+}
+.itemTitle{
+    width: calc(inherit - 8px);
+    height: calc(40px - 4px);
+    padding: 2px 4px;
+    border-bottom: dashed 1px #000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.itemBody{
+    width: calc(inherit - 2px);
+    height: calc(inherit - 42px);
+    padding: 0;
+    display: table-row;
+    vertical-align: middle;
+    border: 1px dashed #000;
+    font-size: 24px;
+}
+
+.largeBoard{
+    width: 600px;
+    height: 250px;
+    margin: 10px;
+    padding: 0;
+    border: 4px double #44b;
+    border-radius: 15px;
+    display: inline-table;
+    background-color: #52529c;
+    text-shadow: 1px 1px 2px #000;
+    box-shadow: 2px 2px 3px #000, inset 2px 2px 3px #003, inset -2px -2px 2px rgba(250,250,250,0.1), inset 2px -2px 2px rgba(250,250,250,0.1), inset -2px 2px 2px rgba(250,250,250,0.1);
+    vertical-align: middle;
+}
+
+.boardTitle{
+    color: #cecece;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #000;
+}
+.budgetStatItem{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    border-width: 3px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.budgetStatItemTitle{
+    width: 100%;
+    height: calc(50px - 1px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px dashed rgba(250,250,250,0.1);
+}
+.budgetStatItemInput{
+width: 100%;
+height: 50px;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: center;
+vertical-align: middle;
+text-align: center;
+}
+
+table{
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgba(250,250,250,0.2);
+    overflow: hidden;
+    
+}
+
+table tr,thead {
+    border-bottom: 1px solid #000;
+}
+
+table th,td{
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    border-right: 1px dashed rgba(0,0,0,0.5);
+}
+table th:last-of-type,td:last-of-type{
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    border-right: none;
+}
+table th{
+    height: 25px;
+}

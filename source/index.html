@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BudgetPlanner</title>
+        <link rel="stylesheet" href="../styles/index.css">
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <li class="navItem" id="monthlyBills">Dashboard</li>
+                <li class="navItem" id="income">Income Calculator</li>
+                <li class="navItem" id="income">Bills Calculator</li>
+            </ul>
+        </nav>
+            <div id="dashboard" class="view">
+                <div class="dashboardTitle">
+                    <h1>Budget Dashboard</h1>
+                </div>
+                <div class="clipboard">
+                    <div class="item itemTitle">
+                        Total Monthly Income
+                    </div>
+                    <div class="item itemBody" id="totalIncome">
+                        
+                    </div>
+                </div>
+                <div class="clipboard">
+                    <div class="item itemTitle">
+                        Total Sources of Income
+                    </div>
+                    <div class="item itemBody" id="totalSourcesI">
+
+                    </div>
+                </div>
+                <div class="clipboard">
+                    <div class="item itemTitle">
+                        Total Bill Expenses
+                    </div>
+                    <div class="item itemBody" id="totalBill">
+
+                    </div>
+                </div>
+                <div class="clipboard">
+                    <div class="item itemTitle">
+                        Total Sources of Bills
+                    </div>
+                    <div class="item itemBody" id="totalSourcesB">
+
+                    </div>
+                </div>
+
+
+                <div class="clipboard">
+                    <div class="item itemTitle">
+                        Total remaining after bills
+                    </div>
+                    <div class="item itemBody" id="totalRemainingInput">
+
+                    </div>
+                </div>
+
+                <div class="largeBoard">
+                    <div class="itemTitle boardTitle">
+                        Budget stats:
+                    </div>
+
+
+                    <div class="clipboard budgetStatItem">
+                        <div class="budgetStatItemTitle">
+                            % spent on bills
+                        </div>
+                        <div class="budgetStatItemInput" id="billPercentageInput">
+                            
+                        </div>
+                    </div>
+                    <div class="clipboard budgetStatItem">
+                        <div class="budgetStatItemTitle">
+                            % remaining after bills
+                        </div>
+                        <div class="budgetStatItemInput" id="remainingPercentageInput">
+                            
+                        </div>
+                    </div>
+                    <div class="clipboard budgetStatItem">
+                        <div class="budgetStatItemTitle">
+                            % spent on bills
+                        </div>
+                        <div class="budgetStatItemInput">
+                            45%
+                        </div>
+                    </div>
+                    <div class="clipboard budgetStatItem">
+                        <div class="budgetStatItemTitle">
+                            % spent on bills
+                        </div>
+                        <div class="budgetStatItemInput">
+                            45%
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div id="incomeBoard" class="view">
+                <form id="CreateIncome">
+                    <label>Type of Income</label>
+                    <input id="incomeType" class="incomeInput input" type="text" title="Enter type of income here.">
+                    <label>Source of Income</label>
+                    <input id="incomeCompany" class="incomeInput input" type="text" title="Enter where income is coming from.">
+                    <label>Monthly income</label>
+                    <input id="incomePay" class="incomeInput input" type="number" title="Enter monthly income here.">
+                    </form>
+                <table>
+                    <thead>
+                        <th>Type</th>
+                        <th>Company</th>
+                        <th>Monthly Income</th>
+                    </thead>
+                    <tbody id="incomeList">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <div id="billsBoard" class="view">
+                <form id="CreateBill">
+                    <label>Type of Bill</label>
+                    <input id="billType" class="billInput input" type="text" title="Enter type of income here.">
+                    <label>Company of Bill</label>
+                    <input id="billCompany" class="billInput input" type="text" title="Enter where income is coming from.">
+                    <label>Total Monthly payment</label>
+                    <input id="billPay" class="billInput input" type="number" title="Enter monthly income here.">
+                    <label>Details</label>
+                    <input id="billDetails" class="billInput input" type="text" title="Enter monthly income here.">
+                    </form>
+                <table>
+                    <thead>
+                        <th>Type</th>
+                        <th>Company</th>
+                        <th>Monthly bill expense</th>
+                        <th>Bill Details</th>
+                    </thead>
+                    <tbody id="billList">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            
+
+        <script>
+            require('../scripts/index.js');
+        </script>
+    </body>
+</html>

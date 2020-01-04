@@ -1,0 +1,26 @@
+{
+  "name": "budgetplanner",
+  "version": "1.0.0",
+  "description": "This is a budgetplanner to help keep track of your income, expenses, and other budget matters.",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "keywords": [
+    "budget",
+    "planner"
+  ],
+  "author": "Robert Schalk",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^7.1.7",
+    "electron-window-state": "^5.0.3",
+    "jsonfile": "^5.0.0",
+    "node": "^13.5.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "spectron": "^9.0.0"
+  }
+}
