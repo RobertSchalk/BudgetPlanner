@@ -48,7 +48,7 @@ function createWindow (){
         webPreferences: {
             nodeIntegration: true,
              webviewTag: true,
-            partition: 'SkyNet'},
+            partition: 'BudgetPlanner'},
         
         
         //show: false
